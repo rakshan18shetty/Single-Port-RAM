@@ -1,0 +1,8 @@
+/fetools/work_area/frontend/Batch_11/rakshanshetty/systemverilog/RAM_VERIFICATION/ram_driver.sv
+/fetools/work_area/frontend/Batch_11/rakshanshetty/systemverilog/RAM_VERIFICATION/ram_generator.sv
+/fetools/work_area/frontend/Batch_11/rakshanshetty/systemverilog/RAM_VERIFICATION/ram_monitor.sv
+/fetools/work_area/frontend/Batch_11/rakshanshetty/systemverilog/RAM_VERIFICATION/ram_package.sv
+RAM.sv
+defines.svh
+ram_if.sv
+top.sv

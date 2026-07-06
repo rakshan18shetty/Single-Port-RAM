@@ -1,0 +1,157 @@
+# vsim -c -coverage work.top -do "coverage save -onexit -codeAll a.ucdb; run -all; exit" 
+# Start time: 13:58:36 on Jul 06,2026
+# ** Note: (vsim-8009) Loading existing optimized design _opt
+# //  Questa Sim
+# //  Version 10.6c linux Jul 25 2017
+# //
+# //  Copyright 1991-2017 Mentor Graphics Corporation
+# //  All Rights Reserved.
+# //
+# //  QuestaSim and its associated documentation contain trade
+# //  secrets and commercial or financial information that are the property of
+# //  Mentor Graphics Corporation and are privileged, confidential,
+# //  and exempt from disclosure under the Freedom of Information Act,
+# //  5 U.S.C. Section 552. Furthermore, this information
+# //  is prohibited from disclosure under the Trade Secrets Act,
+# //  18 U.S.C. Section 1905.
+# //
+# Loading sv_std.std
+# Loading work.ram_if(fast)
+# Loading work.ram_package(fast)
+# Loading work.top_sv_unit(fast)
+# Loading work.top(fast)
+# coverage save -onexit -codeAll a.ucdb
+#  run -all
+# ENV constructor drv_vif=/top/intrf
+# TEST drv_vif=/top/intrf
+# TEST drv_vif=/top/intrf
+# ENV build drv_vif=/top/intrf
+# DRIVER constructor vif=/top/intrf
+# GENERATOR: data_in=aa,write_enb=1,read_enb=0,address=5                   0
+# GENERATOR: data_in=1f,write_enb=0,read_enb=1,address=5                   0
+# GENERATOR: data_in=55,write_enb=1,read_enb=0,address=a                   0
+# GENERATOR: data_in=10,write_enb=0,read_enb=1,address=a                   0
+# GENERATOR: data_in=9f,write_enb=0,read_enb=0,address=19                   0
+# GENERATOR: data_in=5a,write_enb=0,read_enb=1,address=13                   0
+# GENERATOR: data_in=8a,write_enb=1,read_enb=1,address=1c                   0
+# GENERATOR: data_in=fa,write_enb=1,read_enb=0,address=11                   0
+# GENERATOR: data_in=ee,write_enb=1,read_enb=0,address=c                   0
+# GENERATOR: data_in=bc,write_enb=0,read_enb=1,address=3                   0
+# GENERATOR: data_in=e7,write_enb=1,read_enb=1,address=6                   0
+# GENERATOR: data_in=89,write_enb=1,read_enb=1,address=e                   0
+# Driver start vif=/top/intrf
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=aa,write_enb=1,read_enb=0,address=5                  90
+# FUNCTIONAL COVERAGE=67
+# MONITOR PASSING DATA TO SCOREBOARD data_out=z                  90
+# OUTPUT FUNCTIONAL COVERAGE=0
+# SCB MON data_out=x,ADDRESS=x                  90
+# MONITOR PASSING DATA TO SCOREBOARD data_out=z                 110
+# OUTPUT FUNCTIONAL COVERAGE=0
+# REF MODEL DATA IN MEM[5]=aa                 110
+# SCB REF data_out=x,ADDRESS=5                 110
+# SCB REF data_out=x,MON data_out=x                 110
+# DATA MATCH SUCCESS.COUNT =1
+# SCB MON data_out=x,ADDRESS=x                 110
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=1f,write_enb=0,read_enb=1,address=5                 130
+# FUNCTIONAL COVERAGE=93
+# MONITOR PASSING DATA TO SCOREBOARD data_out=z                 130
+# OUTPUT FUNCTIONAL COVERAGE=0
+# MONITOR PASSING DATA TO SCOREBOARD data_out=aa                 150
+# OUTPUT FUNCTIONAL COVERAGE=100
+# REF MODEL DATA OUT FROM MEM data_out=aa                 150
+# SCB REF data_out=aa,ADDRESS=5                 150
+# SCB REF data_out=aa,MON data_out=x                 150
+# DATA MATCH FAIL.COUNT 1
+# SCB MON data_out=x,ADDRESS=x                 150
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=55,write_enb=1,read_enb=0,address=a                 170
+# FUNCTIONAL COVERAGE=93
+# MONITOR PASSING DATA TO SCOREBOARD data_out=aa                 170
+# OUTPUT FUNCTIONAL COVERAGE=100
+# MONITOR PASSING DATA TO SCOREBOARD data_out=z                 190
+# OUTPUT FUNCTIONAL COVERAGE=100
+# REF MODEL DATA IN MEM[a]=55                 190
+# SCB REF data_out=x,ADDRESS=a                 190
+# SCB REF data_out=x,MON data_out=x                 190
+# DATA MATCH SUCCESS.COUNT =2
+# SCB MON data_out=x,ADDRESS=x                 190
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=10,write_enb=0,read_enb=1,address=a                 210
+# FUNCTIONAL COVERAGE=93
+# MONITOR PASSING DATA TO SCOREBOARD data_out=z                 210
+# OUTPUT FUNCTIONAL COVERAGE=100
+# MONITOR PASSING DATA TO SCOREBOARD data_out=55                 230
+# OUTPUT FUNCTIONAL COVERAGE=100
+# REF MODEL DATA OUT FROM MEM data_out=55                 230
+# SCB REF data_out=55,ADDRESS=a                 230
+# SCB REF data_out=55,MON data_out=x                 230
+# DATA MATCH FAIL.COUNT 2
+# SCB MON data_out=x,ADDRESS=x                 230
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=9f,write_enb=0,read_enb=0,address=19                 250
+# FUNCTIONAL COVERAGE=100
+# MONITOR PASSING DATA TO SCOREBOARD data_out=55                 250
+# OUTPUT FUNCTIONAL COVERAGE=100
+# MONITOR PASSING DATA TO SCOREBOARD data_out=z                 270
+# OUTPUT FUNCTIONAL COVERAGE=100
+# SCB REF data_out=x,ADDRESS=19                 270
+# SCB REF data_out=x,MON data_out=x                 270
+# DATA MATCH SUCCESS.COUNT =3
+# SCB MON data_out=x,ADDRESS=x                 270
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=5a,write_enb=0,read_enb=1,address=13                 290
+# FUNCTIONAL COVERAGE=100
+# MONITOR PASSING DATA TO SCOREBOARD data_out=z                 290
+# OUTPUT FUNCTIONAL COVERAGE=100
+# MONITOR PASSING DATA TO SCOREBOARD data_out=x                 310
+# OUTPUT FUNCTIONAL COVERAGE=100
+# REF MODEL DATA OUT FROM MEM data_out=x                 310
+# SCB REF data_out=x,ADDRESS=13                 310
+# SCB REF data_out=x,MON data_out=x                 310
+# DATA MATCH SUCCESS.COUNT =4
+# SCB MON data_out=x,ADDRESS=x                 310
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=8a,write_enb=1,read_enb=1,address=1c                 330
+# FUNCTIONAL COVERAGE=100
+# REF MODEL DATA IN MEM[1c]=8a                 350
+# REF MODEL DATA OUT FROM MEM data_out=8a                 350
+# SCB REF data_out=8a,ADDRESS=1c                 350
+# SCB REF data_out=8a,MON data_out=x                 350
+# DATA MATCH FAIL.COUNT 3
+# SCB MON data_out=x,ADDRESS=x                 350
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=fa,write_enb=1,read_enb=0,address=11                 370
+# FUNCTIONAL COVERAGE=100
+# REF MODEL DATA IN MEM[11]=fa                 390
+# SCB REF data_out=x,ADDRESS=11                 390
+# SCB REF data_out=x,MON data_out=x                 390
+# DATA MATCH SUCCESS.COUNT =5
+# SCB MON data_out=x,ADDRESS=x                 390
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=ee,write_enb=1,read_enb=0,address=c                 410
+# FUNCTIONAL COVERAGE=100
+# REF MODEL DATA IN MEM[c]=ee                 430
+# SCB REF data_out=x,ADDRESS=c                 430
+# SCB REF data_out=x,MON data_out=x                 430
+# DATA MATCH SUCCESS.COUNT =6
+# SCB MON data_out=x,ADDRESS=x                 430
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=bc,write_enb=0,read_enb=1,address=3                 450
+# FUNCTIONAL COVERAGE=100
+# REF MODEL DATA OUT FROM MEM data_out=x                 470
+# SCB REF data_out=x,ADDRESS=3                 470
+# SCB REF data_out=x,MON data_out=x                 470
+# DATA MATCH SUCCESS.COUNT =7
+# SCB MON data_out=x,ADDRESS=x                 470
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=e7,write_enb=1,read_enb=1,address=6                 490
+# FUNCTIONAL COVERAGE=100
+# REF MODEL DATA IN MEM[6]=e7                 510
+# REF MODEL DATA OUT FROM MEM data_out=e7                 510
+# SCB REF data_out=e7,ADDRESS=6                 510
+# SCB REF data_out=e7,MON data_out=x                 510
+# DATA MATCH FAIL.COUNT 4
+# SCB MON data_out=x,ADDRESS=x                 510
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=89,write_enb=1,read_enb=1,address=e                 530
+# FUNCTIONAL COVERAGE=100
+# REF MODEL DATA IN MEM[e]=89                 550
+# REF MODEL DATA OUT FROM MEM data_out=89                 550
+# SCB REF data_out=89,ADDRESS=e                 550
+# SCB REF data_out=89,MON data_out=x                 550
+# DATA MATCH FAIL.COUNT 5
+# ** Note: $finish    : /fetools/work_area/frontend/Batch_11/rakshanshetty/systemverilog/RAM_VERIFICATION/top.sv(26)
+#    Time: 550 ns  Iteration: 4  Instance: /top
+# Saving coverage database on exit...
+# End time: 13:58:37 on Jul 06,2026, Elapsed time: 0:00:01
+# Errors: 0, Warnings: 0

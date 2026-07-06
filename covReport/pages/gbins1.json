@@ -1,0 +1,10 @@
+var g_data = {
+c87:[4,'WRITE',[],,'86',1,1,'drv_cg','85','/ram_package/ram_driver',[[],[0,'1','5',,'wrt[0]'],[0,'1','7',,'wrt[1]']],[]],
+c88:[4,'READ',[],,'86',1,1,'drv_cg','85','/ram_package/ram_driver',[[],[0,'1','5',,'rd[0]'],[0,'1','7',,'rd[1]']],[]],
+c89:[4,'DATA_IN',[],,'86',1,1,'drv_cg','85','/ram_package/ram_driver',[[],[0,'1','12',,'data']],[]],
+c90:[4,'ADDRESS',[],,'86',1,1,'drv_cg','85','/ram_package/ram_driver',[[],[0,'1','12',,'address']],[]],
+c91:[5,'WRXRD',['WRITE','READ'],,'86',1,1,'drv_cg','85','/ram_package/ram_driver',[[],[4,'1','1',,'wrt[0]','rd[0]'],[4,'1','4',,'wrt[1]','rd[0]'],[4,'1','4',,'wrt[0]','rd[1]'],[3,'--','3',1,'b1']],[[]]],
+c94:[4,'DATA_OUT',[],,'93',1,1,'mon_cg','92','/ram_package/ram_monitor',[[],[0,'1','4',,'dout']],[]],
+dummyEnd:0
+};
+processCovergroupsData(g_data);
