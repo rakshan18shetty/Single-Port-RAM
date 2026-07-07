@@ -1,6 +1,6 @@
-# vsim -c -coverage work.top -do "coverage save -onexit -codeAll a.ucdb; run -all; exit" 
-# Start time: 13:58:36 on Jul 06,2026
-# ** Note: (vsim-8009) Loading existing optimized design _opt
+# vsim -c top 
+# Start time: 09:52:42 on Jul 07,2026
+# ** Note: (vsim-3812) Design is being optimized...
 # //  Questa Sim
 # //  Version 10.6c linux Jul 25 2017
 # //
@@ -20,138 +20,1269 @@
 # Loading work.ram_package(fast)
 # Loading work.top_sv_unit(fast)
 # Loading work.top(fast)
-# coverage save -onexit -codeAll a.ucdb
-#  run -all
 # ENV constructor drv_vif=/top/intrf
-# TEST drv_vif=/top/intrf
-# TEST drv_vif=/top/intrf
 # ENV build drv_vif=/top/intrf
 # DRIVER constructor vif=/top/intrf
-# GENERATOR: data_in=aa,write_enb=1,read_enb=0,address=5                   0
-# GENERATOR: data_in=1f,write_enb=0,read_enb=1,address=5                   0
-# GENERATOR: data_in=55,write_enb=1,read_enb=0,address=a                   0
-# GENERATOR: data_in=10,write_enb=0,read_enb=1,address=a                   0
-# GENERATOR: data_in=9f,write_enb=0,read_enb=0,address=19                   0
-# GENERATOR: data_in=5a,write_enb=0,read_enb=1,address=13                   0
-# GENERATOR: data_in=8a,write_enb=1,read_enb=1,address=1c                   0
-# GENERATOR: data_in=fa,write_enb=1,read_enb=0,address=11                   0
-# GENERATOR: data_in=ee,write_enb=1,read_enb=0,address=c                   0
-# GENERATOR: data_in=bc,write_enb=0,read_enb=1,address=3                   0
-# GENERATOR: data_in=e7,write_enb=1,read_enb=1,address=6                   0
-# GENERATOR: data_in=89,write_enb=1,read_enb=1,address=e                   0
+# GENERATOR: data_in=e2,write_enb=1,read_enb=1,address=5                   0
+# GENERATOR: data_in=d3,write_enb=0,read_enb=1,address=3                   0
+# GENERATOR: data_in=1,write_enb=1,read_enb=1,address=c                   0
+# GENERATOR: data_in=a8,write_enb=1,read_enb=0,address=17                   0
+# GENERATOR: data_in=98,write_enb=1,read_enb=1,address=5                   0
+# GENERATOR: data_in=cb,write_enb=0,read_enb=0,address=11                   0
+# GENERATOR: data_in=1d,write_enb=0,read_enb=0,address=b                   0
+# GENERATOR: data_in=2a,write_enb=1,read_enb=0,address=1e                   0
+# GENERATOR: data_in=53,write_enb=1,read_enb=0,address=0                   0
+# GENERATOR: data_in=a2,write_enb=1,read_enb=0,address=5                   0
+# GENERATOR: data_in=57,write_enb=1,read_enb=1,address=0                   0
+# GENERATOR: data_in=42,write_enb=1,read_enb=1,address=17                   0
+# GENERATOR: data_in=a7,write_enb=1,read_enb=0,address=11                   0
+# GENERATOR: data_in=db,write_enb=1,read_enb=1,address=10                   0
+# GENERATOR: data_in=34,write_enb=1,read_enb=0,address=14                   0
+# GENERATOR: data_in=a8,write_enb=0,read_enb=0,address=8                   0
+# GENERATOR: data_in=68,write_enb=0,read_enb=1,address=c                   0
+# GENERATOR: data_in=fe,write_enb=1,read_enb=0,address=2                   0
+# GENERATOR: data_in=bc,write_enb=0,read_enb=1,address=4                   0
+# GENERATOR: data_in=7d,write_enb=0,read_enb=1,address=11                   0
+# GENERATOR: data_in=44,write_enb=1,read_enb=1,address=1a                   0
+# GENERATOR: data_in=9,write_enb=1,read_enb=1,address=0                   0
+# GENERATOR: data_in=5,write_enb=0,read_enb=1,address=12                   0
+# GENERATOR: data_in=5e,write_enb=1,read_enb=1,address=11                   0
+# GENERATOR: data_in=c6,write_enb=1,read_enb=1,address=11                   0
+# GENERATOR: data_in=c,write_enb=0,read_enb=1,address=15                   0
+# GENERATOR: data_in=d0,write_enb=1,read_enb=1,address=18                   0
+# GENERATOR: data_in=35,write_enb=1,read_enb=0,address=1e                   0
+# GENERATOR: data_in=5f,write_enb=1,read_enb=1,address=8                   0
+# GENERATOR: data_in=2c,write_enb=0,read_enb=0,address=15                   0
+# GENERATOR: data_in=a3,write_enb=1,read_enb=0,address=5                   0
+# GENERATOR: data_in=fc,write_enb=0,read_enb=0,address=3                   0
 # Driver start vif=/top/intrf
-# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=aa,write_enb=1,read_enb=0,address=5                  90
-# FUNCTIONAL COVERAGE=67
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=e2,write_enb=1,read_enb=1,address=5                  90
+# FUNCTIONAL COVERAGE=60
 # MONITOR PASSING DATA TO SCOREBOARD data_out=z                  90
 # OUTPUT FUNCTIONAL COVERAGE=0
 # SCB MON data_out=x,ADDRESS=x                  90
 # MONITOR PASSING DATA TO SCOREBOARD data_out=z                 110
 # OUTPUT FUNCTIONAL COVERAGE=0
-# REF MODEL DATA IN MEM[5]=aa                 110
-# SCB REF data_out=x,ADDRESS=5                 110
-# SCB REF data_out=x,MON data_out=x                 110
-# DATA MATCH SUCCESS.COUNT =1
-# SCB MON data_out=x,ADDRESS=x                 110
-# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=1f,write_enb=0,read_enb=1,address=5                 130
-# FUNCTIONAL COVERAGE=93
-# MONITOR PASSING DATA TO SCOREBOARD data_out=z                 130
-# OUTPUT FUNCTIONAL COVERAGE=0
-# MONITOR PASSING DATA TO SCOREBOARD data_out=aa                 150
-# OUTPUT FUNCTIONAL COVERAGE=100
-# REF MODEL DATA OUT FROM MEM data_out=aa                 150
-# SCB REF data_out=aa,ADDRESS=5                 150
-# SCB REF data_out=aa,MON data_out=x                 150
+# REF MODEL DATA IN MEM[5]=e2                 110
+# REF MODEL DATA OUT FROM MEM data_out=e2                 110
+# SCB REF data_out=e2,ADDRESS=5                 110
+# SCB REF data_out=e2,MON data_out=x                 110
 # DATA MATCH FAIL.COUNT 1
+# SCB MON data_out=x,ADDRESS=x                 110
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=d3,write_enb=0,read_enb=1,address=3                 130
+# FUNCTIONAL COVERAGE=77
+# MONITOR PASSING DATA TO SCOREBOARD data_out=x                 130
+# OUTPUT FUNCTIONAL COVERAGE=0
+# MONITOR PASSING DATA TO SCOREBOARD data_out=x                 150
+# OUTPUT FUNCTIONAL COVERAGE=0
+# REF MODEL DATA OUT FROM MEM data_out=x                 150
+# SCB REF data_out=x,ADDRESS=3                 150
+# SCB REF data_out=x,MON data_out=x                 150
+# DATA MATCH SUCCESS.COUNT =1
 # SCB MON data_out=x,ADDRESS=x                 150
-# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=55,write_enb=1,read_enb=0,address=a                 170
-# FUNCTIONAL COVERAGE=93
-# MONITOR PASSING DATA TO SCOREBOARD data_out=aa                 170
-# OUTPUT FUNCTIONAL COVERAGE=100
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=1,write_enb=1,read_enb=1,address=c                 170
+# FUNCTIONAL COVERAGE=77
+# MONITOR PASSING DATA TO SCOREBOARD data_out=x                 170
+# OUTPUT FUNCTIONAL COVERAGE=0
 # MONITOR PASSING DATA TO SCOREBOARD data_out=z                 190
-# OUTPUT FUNCTIONAL COVERAGE=100
-# REF MODEL DATA IN MEM[a]=55                 190
-# SCB REF data_out=x,ADDRESS=a                 190
-# SCB REF data_out=x,MON data_out=x                 190
-# DATA MATCH SUCCESS.COUNT =2
-# SCB MON data_out=x,ADDRESS=x                 190
-# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=10,write_enb=0,read_enb=1,address=a                 210
-# FUNCTIONAL COVERAGE=93
-# MONITOR PASSING DATA TO SCOREBOARD data_out=z                 210
-# OUTPUT FUNCTIONAL COVERAGE=100
-# MONITOR PASSING DATA TO SCOREBOARD data_out=55                 230
-# OUTPUT FUNCTIONAL COVERAGE=100
-# REF MODEL DATA OUT FROM MEM data_out=55                 230
-# SCB REF data_out=55,ADDRESS=a                 230
-# SCB REF data_out=55,MON data_out=x                 230
+# OUTPUT FUNCTIONAL COVERAGE=0
+# REF MODEL DATA IN MEM[c]=1                 190
+# REF MODEL DATA OUT FROM MEM data_out=1                 190
+# SCB REF data_out=1,ADDRESS=c                 190
+# SCB REF data_out=1,MON data_out=x                 190
 # DATA MATCH FAIL.COUNT 2
+# SCB MON data_out=x,ADDRESS=x                 190
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=a8,write_enb=1,read_enb=0,address=17                 210
+# FUNCTIONAL COVERAGE=93
+# MONITOR PASSING DATA TO SCOREBOARD data_out=x                 210
+# OUTPUT FUNCTIONAL COVERAGE=0
+# MONITOR PASSING DATA TO SCOREBOARD data_out=z                 230
+# OUTPUT FUNCTIONAL COVERAGE=0
+# REF MODEL DATA IN MEM[17]=a8                 230
+# SCB REF data_out=x,ADDRESS=17                 230
+# SCB REF data_out=x,MON data_out=x                 230
+# DATA MATCH SUCCESS.COUNT =2
 # SCB MON data_out=x,ADDRESS=x                 230
-# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=9f,write_enb=0,read_enb=0,address=19                 250
-# FUNCTIONAL COVERAGE=100
-# MONITOR PASSING DATA TO SCOREBOARD data_out=55                 250
-# OUTPUT FUNCTIONAL COVERAGE=100
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=98,write_enb=1,read_enb=1,address=5                 250
+# FUNCTIONAL COVERAGE=93
+# MONITOR PASSING DATA TO SCOREBOARD data_out=z                 250
+# OUTPUT FUNCTIONAL COVERAGE=0
 # MONITOR PASSING DATA TO SCOREBOARD data_out=z                 270
-# OUTPUT FUNCTIONAL COVERAGE=100
-# SCB REF data_out=x,ADDRESS=19                 270
-# SCB REF data_out=x,MON data_out=x                 270
-# DATA MATCH SUCCESS.COUNT =3
-# SCB MON data_out=x,ADDRESS=x                 270
-# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=5a,write_enb=0,read_enb=1,address=13                 290
-# FUNCTIONAL COVERAGE=100
-# MONITOR PASSING DATA TO SCOREBOARD data_out=z                 290
-# OUTPUT FUNCTIONAL COVERAGE=100
-# MONITOR PASSING DATA TO SCOREBOARD data_out=x                 310
-# OUTPUT FUNCTIONAL COVERAGE=100
-# REF MODEL DATA OUT FROM MEM data_out=x                 310
-# SCB REF data_out=x,ADDRESS=13                 310
-# SCB REF data_out=x,MON data_out=x                 310
-# DATA MATCH SUCCESS.COUNT =4
-# SCB MON data_out=x,ADDRESS=x                 310
-# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=8a,write_enb=1,read_enb=1,address=1c                 330
-# FUNCTIONAL COVERAGE=100
-# REF MODEL DATA IN MEM[1c]=8a                 350
-# REF MODEL DATA OUT FROM MEM data_out=8a                 350
-# SCB REF data_out=8a,ADDRESS=1c                 350
-# SCB REF data_out=8a,MON data_out=x                 350
+# OUTPUT FUNCTIONAL COVERAGE=0
+# REF MODEL DATA IN MEM[5]=98                 270
+# REF MODEL DATA OUT FROM MEM data_out=98                 270
+# SCB REF data_out=98,ADDRESS=5                 270
+# SCB REF data_out=98,MON data_out=x                 270
 # DATA MATCH FAIL.COUNT 3
-# SCB MON data_out=x,ADDRESS=x                 350
-# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=fa,write_enb=1,read_enb=0,address=11                 370
+# SCB MON data_out=x,ADDRESS=x                 270
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=cb,write_enb=0,read_enb=0,address=11                 290
 # FUNCTIONAL COVERAGE=100
-# REF MODEL DATA IN MEM[11]=fa                 390
-# SCB REF data_out=x,ADDRESS=11                 390
+# MONITOR PASSING DATA TO SCOREBOARD data_out=x                 290
+# OUTPUT FUNCTIONAL COVERAGE=0
+# MONITOR PASSING DATA TO SCOREBOARD data_out=z                 310
+# OUTPUT FUNCTIONAL COVERAGE=0
+# SCB REF data_out=x,ADDRESS=11                 310
+# SCB REF data_out=x,MON data_out=x                 310
+# DATA MATCH SUCCESS.COUNT =3
+# SCB MON data_out=x,ADDRESS=x                 310
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=1d,write_enb=0,read_enb=0,address=b                 330
+# FUNCTIONAL COVERAGE=100
+# MONITOR PASSING DATA TO SCOREBOARD data_out=z                 330
+# OUTPUT FUNCTIONAL COVERAGE=0
+# MONITOR PASSING DATA TO SCOREBOARD data_out=z                 350
+# OUTPUT FUNCTIONAL COVERAGE=0
+# SCB REF data_out=x,ADDRESS=b                 350
+# SCB REF data_out=x,MON data_out=x                 350
+# DATA MATCH SUCCESS.COUNT =4
+# SCB MON data_out=x,ADDRESS=x                 350
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=2a,write_enb=1,read_enb=0,address=1e                 370
+# FUNCTIONAL COVERAGE=100
+# MONITOR PASSING DATA TO SCOREBOARD data_out=z                 370
+# OUTPUT FUNCTIONAL COVERAGE=0
+# MONITOR PASSING DATA TO SCOREBOARD data_out=z                 390
+# OUTPUT FUNCTIONAL COVERAGE=0
+# REF MODEL DATA IN MEM[1e]=2a                 390
+# SCB REF data_out=x,ADDRESS=1e                 390
 # SCB REF data_out=x,MON data_out=x                 390
 # DATA MATCH SUCCESS.COUNT =5
 # SCB MON data_out=x,ADDRESS=x                 390
-# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=ee,write_enb=1,read_enb=0,address=c                 410
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=53,write_enb=1,read_enb=0,address=0                 410
 # FUNCTIONAL COVERAGE=100
-# REF MODEL DATA IN MEM[c]=ee                 430
-# SCB REF data_out=x,ADDRESS=c                 430
+# MONITOR PASSING DATA TO SCOREBOARD data_out=z                 410
+# OUTPUT FUNCTIONAL COVERAGE=0
+# MONITOR PASSING DATA TO SCOREBOARD data_out=z                 430
+# OUTPUT FUNCTIONAL COVERAGE=0
+# REF MODEL DATA IN MEM[0]=53                 430
+# SCB REF data_out=x,ADDRESS=0                 430
 # SCB REF data_out=x,MON data_out=x                 430
 # DATA MATCH SUCCESS.COUNT =6
 # SCB MON data_out=x,ADDRESS=x                 430
-# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=bc,write_enb=0,read_enb=1,address=3                 450
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=a2,write_enb=1,read_enb=0,address=5                 450
 # FUNCTIONAL COVERAGE=100
-# REF MODEL DATA OUT FROM MEM data_out=x                 470
-# SCB REF data_out=x,ADDRESS=3                 470
+# MONITOR PASSING DATA TO SCOREBOARD data_out=z                 450
+# OUTPUT FUNCTIONAL COVERAGE=0
+# MONITOR PASSING DATA TO SCOREBOARD data_out=z                 470
+# OUTPUT FUNCTIONAL COVERAGE=0
+# REF MODEL DATA IN MEM[5]=a2                 470
+# SCB REF data_out=x,ADDRESS=5                 470
 # SCB REF data_out=x,MON data_out=x                 470
 # DATA MATCH SUCCESS.COUNT =7
 # SCB MON data_out=x,ADDRESS=x                 470
-# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=e7,write_enb=1,read_enb=1,address=6                 490
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=57,write_enb=1,read_enb=1,address=0                 490
 # FUNCTIONAL COVERAGE=100
-# REF MODEL DATA IN MEM[6]=e7                 510
-# REF MODEL DATA OUT FROM MEM data_out=e7                 510
-# SCB REF data_out=e7,ADDRESS=6                 510
-# SCB REF data_out=e7,MON data_out=x                 510
+# MONITOR PASSING DATA TO SCOREBOARD data_out=z                 490
+# OUTPUT FUNCTIONAL COVERAGE=0
+# MONITOR PASSING DATA TO SCOREBOARD data_out=z                 510
+# OUTPUT FUNCTIONAL COVERAGE=0
+# REF MODEL DATA IN MEM[0]=57                 510
+# REF MODEL DATA OUT FROM MEM data_out=57                 510
+# SCB REF data_out=57,ADDRESS=0                 510
+# SCB REF data_out=57,MON data_out=x                 510
 # DATA MATCH FAIL.COUNT 4
 # SCB MON data_out=x,ADDRESS=x                 510
-# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=89,write_enb=1,read_enb=1,address=e                 530
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=42,write_enb=1,read_enb=1,address=17                 530
 # FUNCTIONAL COVERAGE=100
-# REF MODEL DATA IN MEM[e]=89                 550
-# REF MODEL DATA OUT FROM MEM data_out=89                 550
-# SCB REF data_out=89,ADDRESS=e                 550
-# SCB REF data_out=89,MON data_out=x                 550
+# MONITOR PASSING DATA TO SCOREBOARD data_out=53                 530
+# OUTPUT FUNCTIONAL COVERAGE=100
+# MONITOR PASSING DATA TO SCOREBOARD data_out=z                 550
+# OUTPUT FUNCTIONAL COVERAGE=100
+# REF MODEL DATA IN MEM[17]=42                 550
+# REF MODEL DATA OUT FROM MEM data_out=42                 550
+# SCB REF data_out=42,ADDRESS=17                 550
+# SCB REF data_out=42,MON data_out=x                 550
 # DATA MATCH FAIL.COUNT 5
-# ** Note: $finish    : /fetools/work_area/frontend/Batch_11/rakshanshetty/systemverilog/RAM_VERIFICATION/top.sv(26)
-#    Time: 550 ns  Iteration: 4  Instance: /top
-# Saving coverage database on exit...
-# End time: 13:58:37 on Jul 06,2026, Elapsed time: 0:00:01
+# SCB MON data_out=x,ADDRESS=x                 550
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=a7,write_enb=1,read_enb=0,address=11                 570
+# FUNCTIONAL COVERAGE=100
+# MONITOR PASSING DATA TO SCOREBOARD data_out=a8                 570
+# OUTPUT FUNCTIONAL COVERAGE=100
+# MONITOR PASSING DATA TO SCOREBOARD data_out=z                 590
+# OUTPUT FUNCTIONAL COVERAGE=100
+# REF MODEL DATA IN MEM[11]=a7                 590
+# SCB REF data_out=x,ADDRESS=11                 590
+# SCB REF data_out=x,MON data_out=x                 590
+# DATA MATCH SUCCESS.COUNT =8
+# SCB MON data_out=x,ADDRESS=x                 590
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=db,write_enb=1,read_enb=1,address=10                 610
+# FUNCTIONAL COVERAGE=100
+# MONITOR PASSING DATA TO SCOREBOARD data_out=z                 610
+# OUTPUT FUNCTIONAL COVERAGE=100
+# MONITOR PASSING DATA TO SCOREBOARD data_out=z                 630
+# OUTPUT FUNCTIONAL COVERAGE=100
+# REF MODEL DATA IN MEM[10]=db                 630
+# REF MODEL DATA OUT FROM MEM data_out=db                 630
+# SCB REF data_out=db,ADDRESS=10                 630
+# SCB REF data_out=db,MON data_out=x                 630
+# DATA MATCH FAIL.COUNT 6
+# SCB MON data_out=x,ADDRESS=x                 630
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=34,write_enb=1,read_enb=0,address=14                 650
+# FUNCTIONAL COVERAGE=100
+# MONITOR PASSING DATA TO SCOREBOARD data_out=x                 650
+# OUTPUT FUNCTIONAL COVERAGE=100
+# MONITOR PASSING DATA TO SCOREBOARD data_out=z                 670
+# OUTPUT FUNCTIONAL COVERAGE=100
+# REF MODEL DATA IN MEM[14]=34                 670
+# SCB REF data_out=x,ADDRESS=14                 670
+# SCB REF data_out=x,MON data_out=x                 670
+# DATA MATCH SUCCESS.COUNT =9
+# SCB MON data_out=x,ADDRESS=x                 670
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=a8,write_enb=0,read_enb=0,address=8                 690
+# FUNCTIONAL COVERAGE=100
+# MONITOR PASSING DATA TO SCOREBOARD data_out=z                 690
+# OUTPUT FUNCTIONAL COVERAGE=100
+# MONITOR PASSING DATA TO SCOREBOARD data_out=z                 710
+# OUTPUT FUNCTIONAL COVERAGE=100
+# SCB REF data_out=x,ADDRESS=8                 710
+# SCB REF data_out=x,MON data_out=x                 710
+# DATA MATCH SUCCESS.COUNT =10
+# SCB MON data_out=x,ADDRESS=x                 710
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=68,write_enb=0,read_enb=1,address=c                 730
+# FUNCTIONAL COVERAGE=100
+# REF MODEL DATA OUT FROM MEM data_out=1                 750
+# SCB REF data_out=1,ADDRESS=c                 750
+# SCB REF data_out=1,MON data_out=x                 750
+# DATA MATCH FAIL.COUNT 7
+# SCB MON data_out=x,ADDRESS=x                 750
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=fe,write_enb=1,read_enb=0,address=2                 770
+# FUNCTIONAL COVERAGE=100
+# REF MODEL DATA IN MEM[2]=fe                 790
+# SCB REF data_out=x,ADDRESS=2                 790
+# SCB REF data_out=x,MON data_out=x                 790
+# DATA MATCH SUCCESS.COUNT =11
+# SCB MON data_out=x,ADDRESS=x                 790
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=bc,write_enb=0,read_enb=1,address=4                 810
+# FUNCTIONAL COVERAGE=100
+# REF MODEL DATA OUT FROM MEM data_out=x                 830
+# SCB REF data_out=x,ADDRESS=4                 830
+# SCB REF data_out=x,MON data_out=x                 830
+# DATA MATCH SUCCESS.COUNT =12
+# SCB MON data_out=x,ADDRESS=x                 830
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=7d,write_enb=0,read_enb=1,address=11                 850
+# FUNCTIONAL COVERAGE=100
+# REF MODEL DATA OUT FROM MEM data_out=a7                 870
+# SCB REF data_out=a7,ADDRESS=11                 870
+# SCB REF data_out=a7,MON data_out=x                 870
+# DATA MATCH FAIL.COUNT 8
+# SCB MON data_out=x,ADDRESS=x                 870
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=44,write_enb=1,read_enb=1,address=1a                 890
+# FUNCTIONAL COVERAGE=100
+# REF MODEL DATA IN MEM[1a]=44                 910
+# REF MODEL DATA OUT FROM MEM data_out=44                 910
+# SCB REF data_out=44,ADDRESS=1a                 910
+# SCB REF data_out=44,MON data_out=x                 910
+# DATA MATCH FAIL.COUNT 9
+# SCB MON data_out=x,ADDRESS=x                 910
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=9,write_enb=1,read_enb=1,address=0                 930
+# FUNCTIONAL COVERAGE=100
+# REF MODEL DATA IN MEM[0]=9                 950
+# REF MODEL DATA OUT FROM MEM data_out=9                 950
+# SCB REF data_out=9,ADDRESS=0                 950
+# SCB REF data_out=9,MON data_out=x                 950
+# DATA MATCH FAIL.COUNT 10
+# SCB MON data_out=x,ADDRESS=x                 950
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=5,write_enb=0,read_enb=1,address=12                 970
+# FUNCTIONAL COVERAGE=100
+# REF MODEL DATA OUT FROM MEM data_out=x                 990
+# SCB REF data_out=x,ADDRESS=12                 990
+# SCB REF data_out=x,MON data_out=x                 990
+# DATA MATCH SUCCESS.COUNT =13
+# SCB MON data_out=x,ADDRESS=x                 990
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=5e,write_enb=1,read_enb=1,address=11                1010
+# FUNCTIONAL COVERAGE=100
+# REF MODEL DATA IN MEM[11]=5e                1030
+# REF MODEL DATA OUT FROM MEM data_out=5e                1030
+# SCB REF data_out=5e,ADDRESS=11                1030
+# SCB REF data_out=5e,MON data_out=x                1030
+# DATA MATCH FAIL.COUNT 11
+# SCB MON data_out=x,ADDRESS=x                1030
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=c6,write_enb=1,read_enb=1,address=11                1050
+# FUNCTIONAL COVERAGE=100
+# REF MODEL DATA IN MEM[11]=c6                1070
+# REF MODEL DATA OUT FROM MEM data_out=c6                1070
+# SCB REF data_out=c6,ADDRESS=11                1070
+# SCB REF data_out=c6,MON data_out=x                1070
+# DATA MATCH FAIL.COUNT 12
+# SCB MON data_out=x,ADDRESS=x                1070
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=c,write_enb=0,read_enb=1,address=15                1090
+# FUNCTIONAL COVERAGE=100
+# REF MODEL DATA OUT FROM MEM data_out=x                1110
+# SCB REF data_out=x,ADDRESS=15                1110
+# SCB REF data_out=x,MON data_out=x                1110
+# DATA MATCH SUCCESS.COUNT =14
+# SCB MON data_out=x,ADDRESS=x                1110
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=d0,write_enb=1,read_enb=1,address=18                1130
+# FUNCTIONAL COVERAGE=100
+# REF MODEL DATA IN MEM[18]=d0                1150
+# REF MODEL DATA OUT FROM MEM data_out=d0                1150
+# SCB REF data_out=d0,ADDRESS=18                1150
+# SCB REF data_out=d0,MON data_out=x                1150
+# DATA MATCH FAIL.COUNT 13
+# SCB MON data_out=x,ADDRESS=x                1150
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=35,write_enb=1,read_enb=0,address=1e                1170
+# FUNCTIONAL COVERAGE=100
+# REF MODEL DATA IN MEM[1e]=35                1190
+# SCB REF data_out=x,ADDRESS=1e                1190
+# SCB REF data_out=x,MON data_out=x                1190
+# DATA MATCH SUCCESS.COUNT =15
+# SCB MON data_out=x,ADDRESS=x                1190
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=5f,write_enb=1,read_enb=1,address=8                1210
+# FUNCTIONAL COVERAGE=100
+# REF MODEL DATA IN MEM[8]=5f                1230
+# REF MODEL DATA OUT FROM MEM data_out=5f                1230
+# SCB REF data_out=5f,ADDRESS=8                1230
+# SCB REF data_out=5f,MON data_out=x                1230
+# DATA MATCH FAIL.COUNT 14
+# SCB MON data_out=x,ADDRESS=x                1230
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=2c,write_enb=0,read_enb=0,address=15                1250
+# FUNCTIONAL COVERAGE=100
+# SCB REF data_out=x,ADDRESS=15                1270
+# SCB REF data_out=x,MON data_out=x                1270
+# DATA MATCH SUCCESS.COUNT =16
+# SCB MON data_out=x,ADDRESS=x                1270
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=a3,write_enb=1,read_enb=0,address=5                1290
+# FUNCTIONAL COVERAGE=100
+# REF MODEL DATA IN MEM[5]=a3                1310
+# SCB REF data_out=x,ADDRESS=5                1310
+# SCB REF data_out=x,MON data_out=x                1310
+# DATA MATCH SUCCESS.COUNT =17
+# SCB MON data_out=x,ADDRESS=x                1310
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=fc,write_enb=0,read_enb=0,address=3                1330
+# FUNCTIONAL COVERAGE=100
+# SCB REF data_out=x,ADDRESS=3                1350
+# SCB REF data_out=x,MON data_out=x                1350
+# DATA MATCH SUCCESS.COUNT =18
+# GENERATOR: data_in=c9,write_enb=0,read_enb=1,address=4                1350
+# GENERATOR: data_in=96,write_enb=0,read_enb=1,address=1                1350
+# GENERATOR: data_in=87,write_enb=0,read_enb=1,address=1                1350
+# GENERATOR: data_in=3b,write_enb=0,read_enb=1,address=1f                1350
+# GENERATOR: data_in=40,write_enb=0,read_enb=1,address=16                1350
+# GENERATOR: data_in=59,write_enb=0,read_enb=1,address=6                1350
+# GENERATOR: data_in=30,write_enb=0,read_enb=1,address=15                1350
+# GENERATOR: data_in=5f,write_enb=0,read_enb=1,address=17                1350
+# GENERATOR: data_in=fb,write_enb=0,read_enb=1,address=13                1350
+# GENERATOR: data_in=36,write_enb=0,read_enb=1,address=3                1350
+# GENERATOR: data_in=2b,write_enb=0,read_enb=1,address=6                1350
+# GENERATOR: data_in=cb,write_enb=0,read_enb=1,address=c                1350
+# GENERATOR: data_in=79,write_enb=0,read_enb=1,address=a                1350
+# GENERATOR: data_in=9c,write_enb=0,read_enb=1,address=7                1350
+# GENERATOR: data_in=b0,write_enb=0,read_enb=1,address=10                1350
+# GENERATOR: data_in=2f,write_enb=0,read_enb=1,address=1c                1350
+# GENERATOR: data_in=d0,write_enb=0,read_enb=1,address=1                1350
+# GENERATOR: data_in=45,write_enb=0,read_enb=1,address=1d                1350
+# GENERATOR: data_in=77,write_enb=0,read_enb=1,address=1f                1350
+# GENERATOR: data_in=e,write_enb=0,read_enb=1,address=d                1350
+# GENERATOR: data_in=77,write_enb=0,read_enb=1,address=f                1350
+# GENERATOR: data_in=7b,write_enb=0,read_enb=1,address=12                1350
+# GENERATOR: data_in=40,write_enb=0,read_enb=1,address=19                1350
+# GENERATOR: data_in=99,write_enb=0,read_enb=1,address=b                1350
+# GENERATOR: data_in=5f,write_enb=0,read_enb=1,address=17                1350
+# GENERATOR: data_in=55,write_enb=0,read_enb=1,address=4                1350
+# GENERATOR: data_in=36,write_enb=0,read_enb=1,address=a                1350
+# GENERATOR: data_in=5b,write_enb=0,read_enb=1,address=2                1350
+# GENERATOR: data_in=b8,write_enb=0,read_enb=1,address=a                1350
+# GENERATOR: data_in=2f,write_enb=0,read_enb=1,address=12                1350
+# GENERATOR: data_in=b9,write_enb=0,read_enb=1,address=9                1350
+# GENERATOR: data_in=8b,write_enb=0,read_enb=1,address=13                1350
+# Driver start vif=/top/intrf
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=c9,write_enb=0,read_enb=1,address=4                1450
+# FUNCTIONAL COVERAGE=100
+# MONITOR PASSING DATA TO SCOREBOARD data_out=z                1450
+# OUTPUT FUNCTIONAL COVERAGE=100
+# SCB MON data_out=x,ADDRESS=x                1450
+# MONITOR PASSING DATA TO SCOREBOARD data_out=x                1470
+# OUTPUT FUNCTIONAL COVERAGE=100
+# REF MODEL DATA OUT FROM MEM data_out=x                1470
+# SCB REF data_out=x,ADDRESS=4                1470
+# SCB REF data_out=x,MON data_out=x                1470
+# DATA MATCH SUCCESS.COUNT =19
+# SCB MON data_out=x,ADDRESS=x                1470
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=96,write_enb=0,read_enb=1,address=1                1490
+# FUNCTIONAL COVERAGE=100
+# MONITOR PASSING DATA TO SCOREBOARD data_out=x                1490
+# OUTPUT FUNCTIONAL COVERAGE=100
+# MONITOR PASSING DATA TO SCOREBOARD data_out=x                1510
+# OUTPUT FUNCTIONAL COVERAGE=100
+# REF MODEL DATA OUT FROM MEM data_out=x                1510
+# SCB REF data_out=x,ADDRESS=1                1510
+# SCB REF data_out=x,MON data_out=x                1510
+# DATA MATCH SUCCESS.COUNT =20
+# SCB MON data_out=x,ADDRESS=x                1510
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=87,write_enb=0,read_enb=1,address=1                1530
+# FUNCTIONAL COVERAGE=100
+# MONITOR PASSING DATA TO SCOREBOARD data_out=x                1530
+# OUTPUT FUNCTIONAL COVERAGE=100
+# MONITOR PASSING DATA TO SCOREBOARD data_out=x                1550
+# OUTPUT FUNCTIONAL COVERAGE=100
+# REF MODEL DATA OUT FROM MEM data_out=x                1550
+# SCB REF data_out=x,ADDRESS=1                1550
+# SCB REF data_out=x,MON data_out=x                1550
+# DATA MATCH SUCCESS.COUNT =21
+# SCB MON data_out=x,ADDRESS=x                1550
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=3b,write_enb=0,read_enb=1,address=1f                1570
+# FUNCTIONAL COVERAGE=100
+# MONITOR PASSING DATA TO SCOREBOARD data_out=x                1570
+# OUTPUT FUNCTIONAL COVERAGE=100
+# MONITOR PASSING DATA TO SCOREBOARD data_out=x                1590
+# OUTPUT FUNCTIONAL COVERAGE=100
+# REF MODEL DATA OUT FROM MEM data_out=x                1590
+# SCB REF data_out=x,ADDRESS=1f                1590
+# SCB REF data_out=x,MON data_out=x                1590
+# DATA MATCH SUCCESS.COUNT =22
+# SCB MON data_out=x,ADDRESS=x                1590
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=40,write_enb=0,read_enb=1,address=16                1610
+# FUNCTIONAL COVERAGE=100
+# MONITOR PASSING DATA TO SCOREBOARD data_out=x                1610
+# OUTPUT FUNCTIONAL COVERAGE=100
+# MONITOR PASSING DATA TO SCOREBOARD data_out=x                1630
+# OUTPUT FUNCTIONAL COVERAGE=100
+# REF MODEL DATA OUT FROM MEM data_out=x                1630
+# SCB REF data_out=x,ADDRESS=16                1630
+# SCB REF data_out=x,MON data_out=x                1630
+# DATA MATCH SUCCESS.COUNT =23
+# SCB MON data_out=x,ADDRESS=x                1630
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=59,write_enb=0,read_enb=1,address=6                1650
+# FUNCTIONAL COVERAGE=100
+# MONITOR PASSING DATA TO SCOREBOARD data_out=x                1650
+# OUTPUT FUNCTIONAL COVERAGE=100
+# MONITOR PASSING DATA TO SCOREBOARD data_out=x                1670
+# OUTPUT FUNCTIONAL COVERAGE=100
+# REF MODEL DATA OUT FROM MEM data_out=x                1670
+# SCB REF data_out=x,ADDRESS=6                1670
+# SCB REF data_out=x,MON data_out=x                1670
+# DATA MATCH SUCCESS.COUNT =24
+# SCB MON data_out=x,ADDRESS=x                1670
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=30,write_enb=0,read_enb=1,address=15                1690
+# FUNCTIONAL COVERAGE=100
+# MONITOR PASSING DATA TO SCOREBOARD data_out=x                1690
+# OUTPUT FUNCTIONAL COVERAGE=100
+# MONITOR PASSING DATA TO SCOREBOARD data_out=x                1710
+# OUTPUT FUNCTIONAL COVERAGE=100
+# REF MODEL DATA OUT FROM MEM data_out=x                1710
+# SCB REF data_out=x,ADDRESS=15                1710
+# SCB REF data_out=x,MON data_out=x                1710
+# DATA MATCH SUCCESS.COUNT =25
+# SCB MON data_out=x,ADDRESS=x                1710
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=5f,write_enb=0,read_enb=1,address=17                1730
+# FUNCTIONAL COVERAGE=100
+# MONITOR PASSING DATA TO SCOREBOARD data_out=x                1730
+# OUTPUT FUNCTIONAL COVERAGE=100
+# MONITOR PASSING DATA TO SCOREBOARD data_out=a8                1750
+# OUTPUT FUNCTIONAL COVERAGE=100
+# REF MODEL DATA OUT FROM MEM data_out=42                1750
+# SCB REF data_out=42,ADDRESS=17                1750
+# SCB REF data_out=42,MON data_out=x                1750
+# DATA MATCH FAIL.COUNT 15
+# SCB MON data_out=x,ADDRESS=x                1750
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=fb,write_enb=0,read_enb=1,address=13                1770
+# FUNCTIONAL COVERAGE=100
+# MONITOR PASSING DATA TO SCOREBOARD data_out=a8                1770
+# OUTPUT FUNCTIONAL COVERAGE=100
+# MONITOR PASSING DATA TO SCOREBOARD data_out=x                1790
+# OUTPUT FUNCTIONAL COVERAGE=100
+# REF MODEL DATA OUT FROM MEM data_out=x                1790
+# SCB REF data_out=x,ADDRESS=13                1790
+# SCB REF data_out=x,MON data_out=x                1790
+# DATA MATCH SUCCESS.COUNT =26
+# SCB MON data_out=x,ADDRESS=x                1790
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=36,write_enb=0,read_enb=1,address=3                1810
+# FUNCTIONAL COVERAGE=100
+# MONITOR PASSING DATA TO SCOREBOARD data_out=x                1810
+# OUTPUT FUNCTIONAL COVERAGE=100
+# MONITOR PASSING DATA TO SCOREBOARD data_out=x                1830
+# OUTPUT FUNCTIONAL COVERAGE=100
+# REF MODEL DATA OUT FROM MEM data_out=x                1830
+# SCB REF data_out=x,ADDRESS=3                1830
+# SCB REF data_out=x,MON data_out=x                1830
+# DATA MATCH SUCCESS.COUNT =27
+# SCB MON data_out=x,ADDRESS=x                1830
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=2b,write_enb=0,read_enb=1,address=6                1850
+# FUNCTIONAL COVERAGE=100
+# MONITOR PASSING DATA TO SCOREBOARD data_out=x                1850
+# OUTPUT FUNCTIONAL COVERAGE=100
+# MONITOR PASSING DATA TO SCOREBOARD data_out=x                1870
+# OUTPUT FUNCTIONAL COVERAGE=100
+# REF MODEL DATA OUT FROM MEM data_out=x                1870
+# SCB REF data_out=x,ADDRESS=6                1870
+# SCB REF data_out=x,MON data_out=x                1870
+# DATA MATCH SUCCESS.COUNT =28
+# SCB MON data_out=x,ADDRESS=x                1870
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=cb,write_enb=0,read_enb=1,address=c                1890
+# FUNCTIONAL COVERAGE=100
+# MONITOR PASSING DATA TO SCOREBOARD data_out=x                1890
+# OUTPUT FUNCTIONAL COVERAGE=100
+# MONITOR PASSING DATA TO SCOREBOARD data_out=x                1910
+# OUTPUT FUNCTIONAL COVERAGE=100
+# REF MODEL DATA OUT FROM MEM data_out=1                1910
+# SCB REF data_out=1,ADDRESS=c                1910
+# SCB REF data_out=1,MON data_out=x                1910
+# DATA MATCH FAIL.COUNT 16
+# SCB MON data_out=x,ADDRESS=x                1910
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=79,write_enb=0,read_enb=1,address=a                1930
+# FUNCTIONAL COVERAGE=100
+# MONITOR PASSING DATA TO SCOREBOARD data_out=x                1930
+# OUTPUT FUNCTIONAL COVERAGE=100
+# MONITOR PASSING DATA TO SCOREBOARD data_out=x                1950
+# OUTPUT FUNCTIONAL COVERAGE=100
+# REF MODEL DATA OUT FROM MEM data_out=x                1950
+# SCB REF data_out=x,ADDRESS=a                1950
+# SCB REF data_out=x,MON data_out=x                1950
+# DATA MATCH SUCCESS.COUNT =29
+# SCB MON data_out=x,ADDRESS=x                1950
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=9c,write_enb=0,read_enb=1,address=7                1970
+# FUNCTIONAL COVERAGE=100
+# MONITOR PASSING DATA TO SCOREBOARD data_out=x                1970
+# OUTPUT FUNCTIONAL COVERAGE=100
+# MONITOR PASSING DATA TO SCOREBOARD data_out=x                1990
+# OUTPUT FUNCTIONAL COVERAGE=100
+# REF MODEL DATA OUT FROM MEM data_out=x                1990
+# SCB REF data_out=x,ADDRESS=7                1990
+# SCB REF data_out=x,MON data_out=x                1990
+# DATA MATCH SUCCESS.COUNT =30
+# SCB MON data_out=x,ADDRESS=x                1990
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=b0,write_enb=0,read_enb=1,address=10                2010
+# FUNCTIONAL COVERAGE=100
+# MONITOR PASSING DATA TO SCOREBOARD data_out=x                2010
+# OUTPUT FUNCTIONAL COVERAGE=100
+# MONITOR PASSING DATA TO SCOREBOARD data_out=x                2030
+# OUTPUT FUNCTIONAL COVERAGE=100
+# REF MODEL DATA OUT FROM MEM data_out=db                2030
+# SCB REF data_out=db,ADDRESS=10                2030
+# SCB REF data_out=db,MON data_out=x                2030
+# DATA MATCH FAIL.COUNT 17
+# SCB MON data_out=x,ADDRESS=x                2030
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=2f,write_enb=0,read_enb=1,address=1c                2050
+# FUNCTIONAL COVERAGE=100
+# MONITOR PASSING DATA TO SCOREBOARD data_out=x                2050
+# OUTPUT FUNCTIONAL COVERAGE=100
+# MONITOR PASSING DATA TO SCOREBOARD data_out=x                2070
+# OUTPUT FUNCTIONAL COVERAGE=100
+# REF MODEL DATA OUT FROM MEM data_out=x                2070
+# SCB REF data_out=x,ADDRESS=1c                2070
+# SCB REF data_out=x,MON data_out=x                2070
+# DATA MATCH SUCCESS.COUNT =31
+# SCB MON data_out=x,ADDRESS=x                2070
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=d0,write_enb=0,read_enb=1,address=1                2090
+# FUNCTIONAL COVERAGE=100
+# REF MODEL DATA OUT FROM MEM data_out=x                2110
+# SCB REF data_out=x,ADDRESS=1                2110
+# SCB REF data_out=x,MON data_out=x                2110
+# DATA MATCH SUCCESS.COUNT =32
+# SCB MON data_out=x,ADDRESS=x                2110
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=45,write_enb=0,read_enb=1,address=1d                2130
+# FUNCTIONAL COVERAGE=100
+# REF MODEL DATA OUT FROM MEM data_out=x                2150
+# SCB REF data_out=x,ADDRESS=1d                2150
+# SCB REF data_out=x,MON data_out=x                2150
+# DATA MATCH SUCCESS.COUNT =33
+# SCB MON data_out=x,ADDRESS=x                2150
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=77,write_enb=0,read_enb=1,address=1f                2170
+# FUNCTIONAL COVERAGE=100
+# REF MODEL DATA OUT FROM MEM data_out=x                2190
+# SCB REF data_out=x,ADDRESS=1f                2190
+# SCB REF data_out=x,MON data_out=x                2190
+# DATA MATCH SUCCESS.COUNT =34
+# SCB MON data_out=x,ADDRESS=x                2190
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=e,write_enb=0,read_enb=1,address=d                2210
+# FUNCTIONAL COVERAGE=100
+# REF MODEL DATA OUT FROM MEM data_out=x                2230
+# SCB REF data_out=x,ADDRESS=d                2230
+# SCB REF data_out=x,MON data_out=x                2230
+# DATA MATCH SUCCESS.COUNT =35
+# SCB MON data_out=x,ADDRESS=x                2230
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=77,write_enb=0,read_enb=1,address=f                2250
+# FUNCTIONAL COVERAGE=100
+# REF MODEL DATA OUT FROM MEM data_out=x                2270
+# SCB REF data_out=x,ADDRESS=f                2270
+# SCB REF data_out=x,MON data_out=x                2270
+# DATA MATCH SUCCESS.COUNT =36
+# SCB MON data_out=x,ADDRESS=x                2270
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=7b,write_enb=0,read_enb=1,address=12                2290
+# FUNCTIONAL COVERAGE=100
+# REF MODEL DATA OUT FROM MEM data_out=x                2310
+# SCB REF data_out=x,ADDRESS=12                2310
+# SCB REF data_out=x,MON data_out=x                2310
+# DATA MATCH SUCCESS.COUNT =37
+# SCB MON data_out=x,ADDRESS=x                2310
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=40,write_enb=0,read_enb=1,address=19                2330
+# FUNCTIONAL COVERAGE=100
+# REF MODEL DATA OUT FROM MEM data_out=x                2350
+# SCB REF data_out=x,ADDRESS=19                2350
+# SCB REF data_out=x,MON data_out=x                2350
+# DATA MATCH SUCCESS.COUNT =38
+# SCB MON data_out=x,ADDRESS=x                2350
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=99,write_enb=0,read_enb=1,address=b                2370
+# FUNCTIONAL COVERAGE=100
+# REF MODEL DATA OUT FROM MEM data_out=x                2390
+# SCB REF data_out=x,ADDRESS=b                2390
+# SCB REF data_out=x,MON data_out=x                2390
+# DATA MATCH SUCCESS.COUNT =39
+# SCB MON data_out=x,ADDRESS=x                2390
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=5f,write_enb=0,read_enb=1,address=17                2410
+# FUNCTIONAL COVERAGE=100
+# REF MODEL DATA OUT FROM MEM data_out=42                2430
+# SCB REF data_out=42,ADDRESS=17                2430
+# SCB REF data_out=42,MON data_out=x                2430
+# DATA MATCH FAIL.COUNT 18
+# SCB MON data_out=x,ADDRESS=x                2430
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=55,write_enb=0,read_enb=1,address=4                2450
+# FUNCTIONAL COVERAGE=100
+# REF MODEL DATA OUT FROM MEM data_out=x                2470
+# SCB REF data_out=x,ADDRESS=4                2470
+# SCB REF data_out=x,MON data_out=x                2470
+# DATA MATCH SUCCESS.COUNT =40
+# SCB MON data_out=x,ADDRESS=x                2470
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=36,write_enb=0,read_enb=1,address=a                2490
+# FUNCTIONAL COVERAGE=100
+# REF MODEL DATA OUT FROM MEM data_out=x                2510
+# SCB REF data_out=x,ADDRESS=a                2510
+# SCB REF data_out=x,MON data_out=x                2510
+# DATA MATCH SUCCESS.COUNT =41
+# SCB MON data_out=x,ADDRESS=x                2510
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=5b,write_enb=0,read_enb=1,address=2                2530
+# FUNCTIONAL COVERAGE=100
+# REF MODEL DATA OUT FROM MEM data_out=fe                2550
+# SCB REF data_out=fe,ADDRESS=2                2550
+# SCB REF data_out=fe,MON data_out=x                2550
+# DATA MATCH FAIL.COUNT 19
+# SCB MON data_out=x,ADDRESS=x                2550
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=b8,write_enb=0,read_enb=1,address=a                2570
+# FUNCTIONAL COVERAGE=100
+# REF MODEL DATA OUT FROM MEM data_out=x                2590
+# SCB REF data_out=x,ADDRESS=a                2590
+# SCB REF data_out=x,MON data_out=x                2590
+# DATA MATCH SUCCESS.COUNT =42
+# SCB MON data_out=x,ADDRESS=x                2590
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=2f,write_enb=0,read_enb=1,address=12                2610
+# FUNCTIONAL COVERAGE=100
+# REF MODEL DATA OUT FROM MEM data_out=x                2630
+# SCB REF data_out=x,ADDRESS=12                2630
+# SCB REF data_out=x,MON data_out=x                2630
+# DATA MATCH SUCCESS.COUNT =43
+# SCB MON data_out=x,ADDRESS=x                2630
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=b9,write_enb=0,read_enb=1,address=9                2650
+# FUNCTIONAL COVERAGE=100
+# REF MODEL DATA OUT FROM MEM data_out=x                2670
+# SCB REF data_out=x,ADDRESS=9                2670
+# SCB REF data_out=x,MON data_out=x                2670
+# DATA MATCH SUCCESS.COUNT =44
+# SCB MON data_out=x,ADDRESS=x                2670
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=8b,write_enb=0,read_enb=1,address=13                2690
+# FUNCTIONAL COVERAGE=100
+# REF MODEL DATA OUT FROM MEM data_out=x                2710
+# SCB REF data_out=x,ADDRESS=13                2710
+# SCB REF data_out=x,MON data_out=x                2710
+# DATA MATCH SUCCESS.COUNT =45
+# GENERATOR: data_in=2f,write_enb=1,read_enb=0,address=1c                2710
+# GENERATOR: data_in=48,write_enb=1,read_enb=0,address=17                2710
+# GENERATOR: data_in=d3,write_enb=1,read_enb=0,address=e                2710
+# GENERATOR: data_in=e1,write_enb=1,read_enb=0,address=1                2710
+# GENERATOR: data_in=7e,write_enb=1,read_enb=0,address=11                2710
+# GENERATOR: data_in=0,write_enb=1,read_enb=0,address=15                2710
+# GENERATOR: data_in=e4,write_enb=1,read_enb=0,address=1f                2710
+# GENERATOR: data_in=89,write_enb=1,read_enb=0,address=3                2710
+# GENERATOR: data_in=11,write_enb=1,read_enb=0,address=5                2710
+# GENERATOR: data_in=da,write_enb=1,read_enb=0,address=14                2710
+# GENERATOR: data_in=76,write_enb=1,read_enb=0,address=19                2710
+# GENERATOR: data_in=c4,write_enb=1,read_enb=0,address=13                2710
+# GENERATOR: data_in=7c,write_enb=1,read_enb=0,address=6                2710
+# GENERATOR: data_in=9,write_enb=1,read_enb=0,address=4                2710
+# GENERATOR: data_in=1,write_enb=1,read_enb=0,address=14                2710
+# GENERATOR: data_in=20,write_enb=1,read_enb=0,address=c                2710
+# GENERATOR: data_in=36,write_enb=1,read_enb=0,address=15                2710
+# GENERATOR: data_in=cc,write_enb=1,read_enb=0,address=1f                2710
+# GENERATOR: data_in=d4,write_enb=1,read_enb=0,address=2                2710
+# GENERATOR: data_in=57,write_enb=1,read_enb=0,address=3                2710
+# GENERATOR: data_in=4a,write_enb=1,read_enb=0,address=2                2710
+# GENERATOR: data_in=2d,write_enb=1,read_enb=0,address=15                2710
+# GENERATOR: data_in=19,write_enb=1,read_enb=0,address=1b                2710
+# GENERATOR: data_in=17,write_enb=1,read_enb=0,address=2                2710
+# GENERATOR: data_in=b4,write_enb=1,read_enb=0,address=1d                2710
+# GENERATOR: data_in=d1,write_enb=1,read_enb=0,address=1d                2710
+# GENERATOR: data_in=51,write_enb=1,read_enb=0,address=1b                2710
+# GENERATOR: data_in=7b,write_enb=1,read_enb=0,address=1b                2710
+# GENERATOR: data_in=85,write_enb=1,read_enb=0,address=1f                2710
+# GENERATOR: data_in=99,write_enb=1,read_enb=0,address=f                2710
+# GENERATOR: data_in=64,write_enb=1,read_enb=0,address=17                2710
+# GENERATOR: data_in=8a,write_enb=1,read_enb=0,address=16                2710
+# Driver start vif=/top/intrf
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=2f,write_enb=1,read_enb=0,address=1c                2810
+# FUNCTIONAL COVERAGE=100
+# MONITOR PASSING DATA TO SCOREBOARD data_out=x                2810
+# OUTPUT FUNCTIONAL COVERAGE=100
+# SCB MON data_out=x,ADDRESS=x                2810
+# MONITOR PASSING DATA TO SCOREBOARD data_out=z                2830
+# OUTPUT FUNCTIONAL COVERAGE=100
+# REF MODEL DATA IN MEM[1c]=2f                2830
+# SCB REF data_out=x,ADDRESS=1c                2830
+# SCB REF data_out=x,MON data_out=x                2830
+# DATA MATCH SUCCESS.COUNT =46
+# SCB MON data_out=x,ADDRESS=x                2830
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=48,write_enb=1,read_enb=0,address=17                2850
+# FUNCTIONAL COVERAGE=100
+# MONITOR PASSING DATA TO SCOREBOARD data_out=z                2850
+# OUTPUT FUNCTIONAL COVERAGE=100
+# MONITOR PASSING DATA TO SCOREBOARD data_out=z                2870
+# OUTPUT FUNCTIONAL COVERAGE=100
+# REF MODEL DATA IN MEM[17]=48                2870
+# SCB REF data_out=x,ADDRESS=17                2870
+# SCB REF data_out=x,MON data_out=x                2870
+# DATA MATCH SUCCESS.COUNT =47
+# SCB MON data_out=x,ADDRESS=x                2870
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=d3,write_enb=1,read_enb=0,address=e                2890
+# FUNCTIONAL COVERAGE=100
+# MONITOR PASSING DATA TO SCOREBOARD data_out=z                2890
+# OUTPUT FUNCTIONAL COVERAGE=100
+# MONITOR PASSING DATA TO SCOREBOARD data_out=z                2910
+# OUTPUT FUNCTIONAL COVERAGE=100
+# REF MODEL DATA IN MEM[e]=d3                2910
+# SCB REF data_out=x,ADDRESS=e                2910
+# SCB REF data_out=x,MON data_out=x                2910
+# DATA MATCH SUCCESS.COUNT =48
+# SCB MON data_out=x,ADDRESS=x                2910
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=e1,write_enb=1,read_enb=0,address=1                2930
+# FUNCTIONAL COVERAGE=100
+# MONITOR PASSING DATA TO SCOREBOARD data_out=z                2930
+# OUTPUT FUNCTIONAL COVERAGE=100
+# MONITOR PASSING DATA TO SCOREBOARD data_out=z                2950
+# OUTPUT FUNCTIONAL COVERAGE=100
+# REF MODEL DATA IN MEM[1]=e1                2950
+# SCB REF data_out=x,ADDRESS=1                2950
+# SCB REF data_out=x,MON data_out=x                2950
+# DATA MATCH SUCCESS.COUNT =49
+# SCB MON data_out=x,ADDRESS=x                2950
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=7e,write_enb=1,read_enb=0,address=11                2970
+# FUNCTIONAL COVERAGE=100
+# MONITOR PASSING DATA TO SCOREBOARD data_out=z                2970
+# OUTPUT FUNCTIONAL COVERAGE=100
+# MONITOR PASSING DATA TO SCOREBOARD data_out=z                2990
+# OUTPUT FUNCTIONAL COVERAGE=100
+# REF MODEL DATA IN MEM[11]=7e                2990
+# SCB REF data_out=x,ADDRESS=11                2990
+# SCB REF data_out=x,MON data_out=x                2990
+# DATA MATCH SUCCESS.COUNT =50
+# SCB MON data_out=x,ADDRESS=x                2990
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=0,write_enb=1,read_enb=0,address=15                3010
+# FUNCTIONAL COVERAGE=100
+# MONITOR PASSING DATA TO SCOREBOARD data_out=z                3010
+# OUTPUT FUNCTIONAL COVERAGE=100
+# MONITOR PASSING DATA TO SCOREBOARD data_out=z                3030
+# OUTPUT FUNCTIONAL COVERAGE=100
+# REF MODEL DATA IN MEM[15]=0                3030
+# SCB REF data_out=x,ADDRESS=15                3030
+# SCB REF data_out=x,MON data_out=x                3030
+# DATA MATCH SUCCESS.COUNT =51
+# SCB MON data_out=x,ADDRESS=x                3030
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=e4,write_enb=1,read_enb=0,address=1f                3050
+# FUNCTIONAL COVERAGE=100
+# MONITOR PASSING DATA TO SCOREBOARD data_out=z                3050
+# OUTPUT FUNCTIONAL COVERAGE=100
+# MONITOR PASSING DATA TO SCOREBOARD data_out=z                3070
+# OUTPUT FUNCTIONAL COVERAGE=100
+# REF MODEL DATA IN MEM[1f]=e4                3070
+# SCB REF data_out=x,ADDRESS=1f                3070
+# SCB REF data_out=x,MON data_out=x                3070
+# DATA MATCH SUCCESS.COUNT =52
+# SCB MON data_out=x,ADDRESS=x                3070
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=89,write_enb=1,read_enb=0,address=3                3090
+# FUNCTIONAL COVERAGE=100
+# MONITOR PASSING DATA TO SCOREBOARD data_out=z                3090
+# OUTPUT FUNCTIONAL COVERAGE=100
+# MONITOR PASSING DATA TO SCOREBOARD data_out=z                3110
+# OUTPUT FUNCTIONAL COVERAGE=100
+# REF MODEL DATA IN MEM[3]=89                3110
+# SCB REF data_out=x,ADDRESS=3                3110
+# SCB REF data_out=x,MON data_out=x                3110
+# DATA MATCH SUCCESS.COUNT =53
+# SCB MON data_out=x,ADDRESS=x                3110
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=11,write_enb=1,read_enb=0,address=5                3130
+# FUNCTIONAL COVERAGE=100
+# MONITOR PASSING DATA TO SCOREBOARD data_out=z                3130
+# OUTPUT FUNCTIONAL COVERAGE=100
+# MONITOR PASSING DATA TO SCOREBOARD data_out=z                3150
+# OUTPUT FUNCTIONAL COVERAGE=100
+# REF MODEL DATA IN MEM[5]=11                3150
+# SCB REF data_out=x,ADDRESS=5                3150
+# SCB REF data_out=x,MON data_out=x                3150
+# DATA MATCH SUCCESS.COUNT =54
+# SCB MON data_out=x,ADDRESS=x                3150
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=da,write_enb=1,read_enb=0,address=14                3170
+# FUNCTIONAL COVERAGE=100
+# MONITOR PASSING DATA TO SCOREBOARD data_out=z                3170
+# OUTPUT FUNCTIONAL COVERAGE=100
+# MONITOR PASSING DATA TO SCOREBOARD data_out=z                3190
+# OUTPUT FUNCTIONAL COVERAGE=100
+# REF MODEL DATA IN MEM[14]=da                3190
+# SCB REF data_out=x,ADDRESS=14                3190
+# SCB REF data_out=x,MON data_out=x                3190
+# DATA MATCH SUCCESS.COUNT =55
+# SCB MON data_out=x,ADDRESS=x                3190
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=76,write_enb=1,read_enb=0,address=19                3210
+# FUNCTIONAL COVERAGE=100
+# MONITOR PASSING DATA TO SCOREBOARD data_out=z                3210
+# OUTPUT FUNCTIONAL COVERAGE=100
+# MONITOR PASSING DATA TO SCOREBOARD data_out=z                3230
+# OUTPUT FUNCTIONAL COVERAGE=100
+# REF MODEL DATA IN MEM[19]=76                3230
+# SCB REF data_out=x,ADDRESS=19                3230
+# SCB REF data_out=x,MON data_out=x                3230
+# DATA MATCH SUCCESS.COUNT =56
+# SCB MON data_out=x,ADDRESS=x                3230
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=c4,write_enb=1,read_enb=0,address=13                3250
+# FUNCTIONAL COVERAGE=100
+# MONITOR PASSING DATA TO SCOREBOARD data_out=z                3250
+# OUTPUT FUNCTIONAL COVERAGE=100
+# MONITOR PASSING DATA TO SCOREBOARD data_out=z                3270
+# OUTPUT FUNCTIONAL COVERAGE=100
+# REF MODEL DATA IN MEM[13]=c4                3270
+# SCB REF data_out=x,ADDRESS=13                3270
+# SCB REF data_out=x,MON data_out=x                3270
+# DATA MATCH SUCCESS.COUNT =57
+# SCB MON data_out=x,ADDRESS=x                3270
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=7c,write_enb=1,read_enb=0,address=6                3290
+# FUNCTIONAL COVERAGE=100
+# MONITOR PASSING DATA TO SCOREBOARD data_out=z                3290
+# OUTPUT FUNCTIONAL COVERAGE=100
+# MONITOR PASSING DATA TO SCOREBOARD data_out=z                3310
+# OUTPUT FUNCTIONAL COVERAGE=100
+# REF MODEL DATA IN MEM[6]=7c                3310
+# SCB REF data_out=x,ADDRESS=6                3310
+# SCB REF data_out=x,MON data_out=x                3310
+# DATA MATCH SUCCESS.COUNT =58
+# SCB MON data_out=x,ADDRESS=x                3310
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=9,write_enb=1,read_enb=0,address=4                3330
+# FUNCTIONAL COVERAGE=100
+# MONITOR PASSING DATA TO SCOREBOARD data_out=z                3330
+# OUTPUT FUNCTIONAL COVERAGE=100
+# MONITOR PASSING DATA TO SCOREBOARD data_out=z                3350
+# OUTPUT FUNCTIONAL COVERAGE=100
+# REF MODEL DATA IN MEM[4]=9                3350
+# SCB REF data_out=x,ADDRESS=4                3350
+# SCB REF data_out=x,MON data_out=x                3350
+# DATA MATCH SUCCESS.COUNT =59
+# SCB MON data_out=x,ADDRESS=x                3350
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=1,write_enb=1,read_enb=0,address=14                3370
+# FUNCTIONAL COVERAGE=100
+# MONITOR PASSING DATA TO SCOREBOARD data_out=z                3370
+# OUTPUT FUNCTIONAL COVERAGE=100
+# MONITOR PASSING DATA TO SCOREBOARD data_out=z                3390
+# OUTPUT FUNCTIONAL COVERAGE=100
+# REF MODEL DATA IN MEM[14]=1                3390
+# SCB REF data_out=x,ADDRESS=14                3390
+# SCB REF data_out=x,MON data_out=x                3390
+# DATA MATCH SUCCESS.COUNT =60
+# SCB MON data_out=x,ADDRESS=x                3390
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=20,write_enb=1,read_enb=0,address=c                3410
+# FUNCTIONAL COVERAGE=100
+# MONITOR PASSING DATA TO SCOREBOARD data_out=z                3410
+# OUTPUT FUNCTIONAL COVERAGE=100
+# MONITOR PASSING DATA TO SCOREBOARD data_out=z                3430
+# OUTPUT FUNCTIONAL COVERAGE=100
+# REF MODEL DATA IN MEM[c]=20                3430
+# SCB REF data_out=x,ADDRESS=c                3430
+# SCB REF data_out=x,MON data_out=x                3430
+# DATA MATCH SUCCESS.COUNT =61
+# SCB MON data_out=x,ADDRESS=x                3430
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=36,write_enb=1,read_enb=0,address=15                3450
+# FUNCTIONAL COVERAGE=100
+# REF MODEL DATA IN MEM[15]=36                3470
+# SCB REF data_out=x,ADDRESS=15                3470
+# SCB REF data_out=x,MON data_out=x                3470
+# DATA MATCH SUCCESS.COUNT =62
+# SCB MON data_out=x,ADDRESS=x                3470
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=cc,write_enb=1,read_enb=0,address=1f                3490
+# FUNCTIONAL COVERAGE=100
+# REF MODEL DATA IN MEM[1f]=cc                3510
+# SCB REF data_out=x,ADDRESS=1f                3510
+# SCB REF data_out=x,MON data_out=x                3510
+# DATA MATCH SUCCESS.COUNT =63
+# SCB MON data_out=x,ADDRESS=x                3510
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=d4,write_enb=1,read_enb=0,address=2                3530
+# FUNCTIONAL COVERAGE=100
+# REF MODEL DATA IN MEM[2]=d4                3550
+# SCB REF data_out=x,ADDRESS=2                3550
+# SCB REF data_out=x,MON data_out=x                3550
+# DATA MATCH SUCCESS.COUNT =64
+# SCB MON data_out=x,ADDRESS=x                3550
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=57,write_enb=1,read_enb=0,address=3                3570
+# FUNCTIONAL COVERAGE=100
+# REF MODEL DATA IN MEM[3]=57                3590
+# SCB REF data_out=x,ADDRESS=3                3590
+# SCB REF data_out=x,MON data_out=x                3590
+# DATA MATCH SUCCESS.COUNT =65
+# SCB MON data_out=x,ADDRESS=x                3590
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=4a,write_enb=1,read_enb=0,address=2                3610
+# FUNCTIONAL COVERAGE=100
+# REF MODEL DATA IN MEM[2]=4a                3630
+# SCB REF data_out=x,ADDRESS=2                3630
+# SCB REF data_out=x,MON data_out=x                3630
+# DATA MATCH SUCCESS.COUNT =66
+# SCB MON data_out=x,ADDRESS=x                3630
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=2d,write_enb=1,read_enb=0,address=15                3650
+# FUNCTIONAL COVERAGE=100
+# REF MODEL DATA IN MEM[15]=2d                3670
+# SCB REF data_out=x,ADDRESS=15                3670
+# SCB REF data_out=x,MON data_out=x                3670
+# DATA MATCH SUCCESS.COUNT =67
+# SCB MON data_out=x,ADDRESS=x                3670
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=19,write_enb=1,read_enb=0,address=1b                3690
+# FUNCTIONAL COVERAGE=100
+# REF MODEL DATA IN MEM[1b]=19                3710
+# SCB REF data_out=x,ADDRESS=1b                3710
+# SCB REF data_out=x,MON data_out=x                3710
+# DATA MATCH SUCCESS.COUNT =68
+# SCB MON data_out=x,ADDRESS=x                3710
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=17,write_enb=1,read_enb=0,address=2                3730
+# FUNCTIONAL COVERAGE=100
+# REF MODEL DATA IN MEM[2]=17                3750
+# SCB REF data_out=x,ADDRESS=2                3750
+# SCB REF data_out=x,MON data_out=x                3750
+# DATA MATCH SUCCESS.COUNT =69
+# SCB MON data_out=x,ADDRESS=x                3750
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=b4,write_enb=1,read_enb=0,address=1d                3770
+# FUNCTIONAL COVERAGE=100
+# REF MODEL DATA IN MEM[1d]=b4                3790
+# SCB REF data_out=x,ADDRESS=1d                3790
+# SCB REF data_out=x,MON data_out=x                3790
+# DATA MATCH SUCCESS.COUNT =70
+# SCB MON data_out=x,ADDRESS=x                3790
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=d1,write_enb=1,read_enb=0,address=1d                3810
+# FUNCTIONAL COVERAGE=100
+# REF MODEL DATA IN MEM[1d]=d1                3830
+# SCB REF data_out=x,ADDRESS=1d                3830
+# SCB REF data_out=x,MON data_out=x                3830
+# DATA MATCH SUCCESS.COUNT =71
+# SCB MON data_out=x,ADDRESS=x                3830
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=51,write_enb=1,read_enb=0,address=1b                3850
+# FUNCTIONAL COVERAGE=100
+# REF MODEL DATA IN MEM[1b]=51                3870
+# SCB REF data_out=x,ADDRESS=1b                3870
+# SCB REF data_out=x,MON data_out=x                3870
+# DATA MATCH SUCCESS.COUNT =72
+# SCB MON data_out=x,ADDRESS=x                3870
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=7b,write_enb=1,read_enb=0,address=1b                3890
+# FUNCTIONAL COVERAGE=100
+# REF MODEL DATA IN MEM[1b]=7b                3910
+# SCB REF data_out=x,ADDRESS=1b                3910
+# SCB REF data_out=x,MON data_out=x                3910
+# DATA MATCH SUCCESS.COUNT =73
+# SCB MON data_out=x,ADDRESS=x                3910
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=85,write_enb=1,read_enb=0,address=1f                3930
+# FUNCTIONAL COVERAGE=100
+# REF MODEL DATA IN MEM[1f]=85                3950
+# SCB REF data_out=x,ADDRESS=1f                3950
+# SCB REF data_out=x,MON data_out=x                3950
+# DATA MATCH SUCCESS.COUNT =74
+# SCB MON data_out=x,ADDRESS=x                3950
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=99,write_enb=1,read_enb=0,address=f                3970
+# FUNCTIONAL COVERAGE=100
+# REF MODEL DATA IN MEM[f]=99                3990
+# SCB REF data_out=x,ADDRESS=f                3990
+# SCB REF data_out=x,MON data_out=x                3990
+# DATA MATCH SUCCESS.COUNT =75
+# SCB MON data_out=x,ADDRESS=x                3990
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=64,write_enb=1,read_enb=0,address=17                4010
+# FUNCTIONAL COVERAGE=100
+# REF MODEL DATA IN MEM[17]=64                4030
+# SCB REF data_out=x,ADDRESS=17                4030
+# SCB REF data_out=x,MON data_out=x                4030
+# DATA MATCH SUCCESS.COUNT =76
+# SCB MON data_out=x,ADDRESS=x                4030
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=8a,write_enb=1,read_enb=0,address=16                4050
+# FUNCTIONAL COVERAGE=100
+# REF MODEL DATA IN MEM[16]=8a                4070
+# SCB REF data_out=x,ADDRESS=16                4070
+# SCB REF data_out=x,MON data_out=x                4070
+# DATA MATCH SUCCESS.COUNT =77
+# GENERATOR: data_in=a8,write_enb=0,read_enb=0,address=1a                4070
+# GENERATOR: data_in=6f,write_enb=0,read_enb=0,address=c                4070
+# GENERATOR: data_in=13,write_enb=0,read_enb=0,address=1b                4070
+# GENERATOR: data_in=6d,write_enb=0,read_enb=0,address=9                4070
+# GENERATOR: data_in=52,write_enb=0,read_enb=0,address=d                4070
+# GENERATOR: data_in=f4,write_enb=0,read_enb=0,address=14                4070
+# GENERATOR: data_in=ad,write_enb=0,read_enb=0,address=1e                4070
+# GENERATOR: data_in=c1,write_enb=0,read_enb=0,address=a                4070
+# GENERATOR: data_in=12,write_enb=0,read_enb=0,address=10                4070
+# GENERATOR: data_in=64,write_enb=0,read_enb=0,address=4                4070
+# GENERATOR: data_in=2f,write_enb=0,read_enb=0,address=2                4070
+# GENERATOR: data_in=ee,write_enb=0,read_enb=0,address=13                4070
+# GENERATOR: data_in=b2,write_enb=0,read_enb=0,address=5                4070
+# GENERATOR: data_in=b6,write_enb=0,read_enb=0,address=e                4070
+# GENERATOR: data_in=7e,write_enb=0,read_enb=0,address=4                4070
+# GENERATOR: data_in=1,write_enb=0,read_enb=0,address=1e                4070
+# GENERATOR: data_in=c6,write_enb=0,read_enb=0,address=8                4070
+# GENERATOR: data_in=e5,write_enb=0,read_enb=0,address=1b                4070
+# GENERATOR: data_in=39,write_enb=0,read_enb=0,address=f                4070
+# GENERATOR: data_in=fd,write_enb=0,read_enb=0,address=14                4070
+# GENERATOR: data_in=9c,write_enb=0,read_enb=0,address=2                4070
+# GENERATOR: data_in=86,write_enb=0,read_enb=0,address=a                4070
+# GENERATOR: data_in=c0,write_enb=0,read_enb=0,address=18                4070
+# GENERATOR: data_in=49,write_enb=0,read_enb=0,address=1                4070
+# GENERATOR: data_in=8,write_enb=0,read_enb=0,address=17                4070
+# GENERATOR: data_in=98,write_enb=0,read_enb=0,address=2                4070
+# GENERATOR: data_in=86,write_enb=0,read_enb=0,address=4                4070
+# GENERATOR: data_in=24,write_enb=0,read_enb=0,address=10                4070
+# GENERATOR: data_in=a9,write_enb=0,read_enb=0,address=18                4070
+# GENERATOR: data_in=8c,write_enb=0,read_enb=0,address=1e                4070
+# GENERATOR: data_in=f0,write_enb=0,read_enb=0,address=15                4070
+# GENERATOR: data_in=d4,write_enb=0,read_enb=0,address=e                4070
+# Driver start vif=/top/intrf
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=a8,write_enb=0,read_enb=0,address=1a                4170
+# FUNCTIONAL COVERAGE=100
+# MONITOR PASSING DATA TO SCOREBOARD data_out=z                4170
+# OUTPUT FUNCTIONAL COVERAGE=100
+# SCB MON data_out=x,ADDRESS=x                4170
+# MONITOR PASSING DATA TO SCOREBOARD data_out=z                4190
+# OUTPUT FUNCTIONAL COVERAGE=100
+# SCB REF data_out=x,ADDRESS=1a                4190
+# SCB REF data_out=x,MON data_out=x                4190
+# DATA MATCH SUCCESS.COUNT =78
+# SCB MON data_out=x,ADDRESS=x                4190
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=6f,write_enb=0,read_enb=0,address=c                4210
+# FUNCTIONAL COVERAGE=100
+# MONITOR PASSING DATA TO SCOREBOARD data_out=z                4210
+# OUTPUT FUNCTIONAL COVERAGE=100
+# MONITOR PASSING DATA TO SCOREBOARD data_out=z                4230
+# OUTPUT FUNCTIONAL COVERAGE=100
+# SCB REF data_out=x,ADDRESS=c                4230
+# SCB REF data_out=x,MON data_out=x                4230
+# DATA MATCH SUCCESS.COUNT =79
+# SCB MON data_out=x,ADDRESS=x                4230
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=13,write_enb=0,read_enb=0,address=1b                4250
+# FUNCTIONAL COVERAGE=100
+# MONITOR PASSING DATA TO SCOREBOARD data_out=z                4250
+# OUTPUT FUNCTIONAL COVERAGE=100
+# MONITOR PASSING DATA TO SCOREBOARD data_out=z                4270
+# OUTPUT FUNCTIONAL COVERAGE=100
+# SCB REF data_out=x,ADDRESS=1b                4270
+# SCB REF data_out=x,MON data_out=x                4270
+# DATA MATCH SUCCESS.COUNT =80
+# SCB MON data_out=x,ADDRESS=x                4270
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=6d,write_enb=0,read_enb=0,address=9                4290
+# FUNCTIONAL COVERAGE=100
+# MONITOR PASSING DATA TO SCOREBOARD data_out=z                4290
+# OUTPUT FUNCTIONAL COVERAGE=100
+# MONITOR PASSING DATA TO SCOREBOARD data_out=z                4310
+# OUTPUT FUNCTIONAL COVERAGE=100
+# SCB REF data_out=x,ADDRESS=9                4310
+# SCB REF data_out=x,MON data_out=x                4310
+# DATA MATCH SUCCESS.COUNT =81
+# SCB MON data_out=x,ADDRESS=x                4310
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=52,write_enb=0,read_enb=0,address=d                4330
+# FUNCTIONAL COVERAGE=100
+# MONITOR PASSING DATA TO SCOREBOARD data_out=z                4330
+# OUTPUT FUNCTIONAL COVERAGE=100
+# MONITOR PASSING DATA TO SCOREBOARD data_out=z                4350
+# OUTPUT FUNCTIONAL COVERAGE=100
+# SCB REF data_out=x,ADDRESS=d                4350
+# SCB REF data_out=x,MON data_out=x                4350
+# DATA MATCH SUCCESS.COUNT =82
+# SCB MON data_out=x,ADDRESS=x                4350
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=f4,write_enb=0,read_enb=0,address=14                4370
+# FUNCTIONAL COVERAGE=100
+# MONITOR PASSING DATA TO SCOREBOARD data_out=z                4370
+# OUTPUT FUNCTIONAL COVERAGE=100
+# MONITOR PASSING DATA TO SCOREBOARD data_out=z                4390
+# OUTPUT FUNCTIONAL COVERAGE=100
+# SCB REF data_out=x,ADDRESS=14                4390
+# SCB REF data_out=x,MON data_out=x                4390
+# DATA MATCH SUCCESS.COUNT =83
+# SCB MON data_out=x,ADDRESS=x                4390
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=ad,write_enb=0,read_enb=0,address=1e                4410
+# FUNCTIONAL COVERAGE=100
+# MONITOR PASSING DATA TO SCOREBOARD data_out=z                4410
+# OUTPUT FUNCTIONAL COVERAGE=100
+# MONITOR PASSING DATA TO SCOREBOARD data_out=z                4430
+# OUTPUT FUNCTIONAL COVERAGE=100
+# SCB REF data_out=x,ADDRESS=1e                4430
+# SCB REF data_out=x,MON data_out=x                4430
+# DATA MATCH SUCCESS.COUNT =84
+# SCB MON data_out=x,ADDRESS=x                4430
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=c1,write_enb=0,read_enb=0,address=a                4450
+# FUNCTIONAL COVERAGE=100
+# MONITOR PASSING DATA TO SCOREBOARD data_out=z                4450
+# OUTPUT FUNCTIONAL COVERAGE=100
+# MONITOR PASSING DATA TO SCOREBOARD data_out=z                4470
+# OUTPUT FUNCTIONAL COVERAGE=100
+# SCB REF data_out=x,ADDRESS=a                4470
+# SCB REF data_out=x,MON data_out=x                4470
+# DATA MATCH SUCCESS.COUNT =85
+# SCB MON data_out=x,ADDRESS=x                4470
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=12,write_enb=0,read_enb=0,address=10                4490
+# FUNCTIONAL COVERAGE=100
+# MONITOR PASSING DATA TO SCOREBOARD data_out=z                4490
+# OUTPUT FUNCTIONAL COVERAGE=100
+# MONITOR PASSING DATA TO SCOREBOARD data_out=z                4510
+# OUTPUT FUNCTIONAL COVERAGE=100
+# SCB REF data_out=x,ADDRESS=10                4510
+# SCB REF data_out=x,MON data_out=x                4510
+# DATA MATCH SUCCESS.COUNT =86
+# SCB MON data_out=x,ADDRESS=x                4510
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=64,write_enb=0,read_enb=0,address=4                4530
+# FUNCTIONAL COVERAGE=100
+# MONITOR PASSING DATA TO SCOREBOARD data_out=z                4530
+# OUTPUT FUNCTIONAL COVERAGE=100
+# MONITOR PASSING DATA TO SCOREBOARD data_out=z                4550
+# OUTPUT FUNCTIONAL COVERAGE=100
+# SCB REF data_out=x,ADDRESS=4                4550
+# SCB REF data_out=x,MON data_out=x                4550
+# DATA MATCH SUCCESS.COUNT =87
+# SCB MON data_out=x,ADDRESS=x                4550
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=2f,write_enb=0,read_enb=0,address=2                4570
+# FUNCTIONAL COVERAGE=100
+# MONITOR PASSING DATA TO SCOREBOARD data_out=z                4570
+# OUTPUT FUNCTIONAL COVERAGE=100
+# MONITOR PASSING DATA TO SCOREBOARD data_out=z                4590
+# OUTPUT FUNCTIONAL COVERAGE=100
+# SCB REF data_out=x,ADDRESS=2                4590
+# SCB REF data_out=x,MON data_out=x                4590
+# DATA MATCH SUCCESS.COUNT =88
+# SCB MON data_out=x,ADDRESS=x                4590
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=ee,write_enb=0,read_enb=0,address=13                4610
+# FUNCTIONAL COVERAGE=100
+# MONITOR PASSING DATA TO SCOREBOARD data_out=z                4610
+# OUTPUT FUNCTIONAL COVERAGE=100
+# MONITOR PASSING DATA TO SCOREBOARD data_out=z                4630
+# OUTPUT FUNCTIONAL COVERAGE=100
+# SCB REF data_out=x,ADDRESS=13                4630
+# SCB REF data_out=x,MON data_out=x                4630
+# DATA MATCH SUCCESS.COUNT =89
+# SCB MON data_out=x,ADDRESS=x                4630
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=b2,write_enb=0,read_enb=0,address=5                4650
+# FUNCTIONAL COVERAGE=100
+# MONITOR PASSING DATA TO SCOREBOARD data_out=z                4650
+# OUTPUT FUNCTIONAL COVERAGE=100
+# MONITOR PASSING DATA TO SCOREBOARD data_out=z                4670
+# OUTPUT FUNCTIONAL COVERAGE=100
+# SCB REF data_out=x,ADDRESS=5                4670
+# SCB REF data_out=x,MON data_out=x                4670
+# DATA MATCH SUCCESS.COUNT =90
+# SCB MON data_out=x,ADDRESS=x                4670
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=b6,write_enb=0,read_enb=0,address=e                4690
+# FUNCTIONAL COVERAGE=100
+# MONITOR PASSING DATA TO SCOREBOARD data_out=z                4690
+# OUTPUT FUNCTIONAL COVERAGE=100
+# MONITOR PASSING DATA TO SCOREBOARD data_out=z                4710
+# OUTPUT FUNCTIONAL COVERAGE=100
+# SCB REF data_out=x,ADDRESS=e                4710
+# SCB REF data_out=x,MON data_out=x                4710
+# DATA MATCH SUCCESS.COUNT =91
+# SCB MON data_out=x,ADDRESS=x                4710
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=7e,write_enb=0,read_enb=0,address=4                4730
+# FUNCTIONAL COVERAGE=100
+# MONITOR PASSING DATA TO SCOREBOARD data_out=z                4730
+# OUTPUT FUNCTIONAL COVERAGE=100
+# MONITOR PASSING DATA TO SCOREBOARD data_out=z                4750
+# OUTPUT FUNCTIONAL COVERAGE=100
+# SCB REF data_out=x,ADDRESS=4                4750
+# SCB REF data_out=x,MON data_out=x                4750
+# DATA MATCH SUCCESS.COUNT =92
+# SCB MON data_out=x,ADDRESS=x                4750
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=1,write_enb=0,read_enb=0,address=1e                4770
+# FUNCTIONAL COVERAGE=100
+# MONITOR PASSING DATA TO SCOREBOARD data_out=z                4770
+# OUTPUT FUNCTIONAL COVERAGE=100
+# MONITOR PASSING DATA TO SCOREBOARD data_out=z                4790
+# OUTPUT FUNCTIONAL COVERAGE=100
+# SCB REF data_out=x,ADDRESS=1e                4790
+# SCB REF data_out=x,MON data_out=x                4790
+# DATA MATCH SUCCESS.COUNT =93
+# SCB MON data_out=x,ADDRESS=x                4790
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=c6,write_enb=0,read_enb=0,address=8                4810
+# FUNCTIONAL COVERAGE=100
+# SCB REF data_out=x,ADDRESS=8                4830
+# SCB REF data_out=x,MON data_out=x                4830
+# DATA MATCH SUCCESS.COUNT =94
+# SCB MON data_out=x,ADDRESS=x                4830
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=e5,write_enb=0,read_enb=0,address=1b                4850
+# FUNCTIONAL COVERAGE=100
+# SCB REF data_out=x,ADDRESS=1b                4870
+# SCB REF data_out=x,MON data_out=x                4870
+# DATA MATCH SUCCESS.COUNT =95
+# SCB MON data_out=x,ADDRESS=x                4870
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=39,write_enb=0,read_enb=0,address=f                4890
+# FUNCTIONAL COVERAGE=100
+# SCB REF data_out=x,ADDRESS=f                4910
+# SCB REF data_out=x,MON data_out=x                4910
+# DATA MATCH SUCCESS.COUNT =96
+# SCB MON data_out=x,ADDRESS=x                4910
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=fd,write_enb=0,read_enb=0,address=14                4930
+# FUNCTIONAL COVERAGE=100
+# SCB REF data_out=x,ADDRESS=14                4950
+# SCB REF data_out=x,MON data_out=x                4950
+# DATA MATCH SUCCESS.COUNT =97
+# SCB MON data_out=x,ADDRESS=x                4950
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=9c,write_enb=0,read_enb=0,address=2                4970
+# FUNCTIONAL COVERAGE=100
+# SCB REF data_out=x,ADDRESS=2                4990
+# SCB REF data_out=x,MON data_out=x                4990
+# DATA MATCH SUCCESS.COUNT =98
+# SCB MON data_out=x,ADDRESS=x                4990
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=86,write_enb=0,read_enb=0,address=a                5010
+# FUNCTIONAL COVERAGE=100
+# SCB REF data_out=x,ADDRESS=a                5030
+# SCB REF data_out=x,MON data_out=x                5030
+# DATA MATCH SUCCESS.COUNT =99
+# SCB MON data_out=x,ADDRESS=x                5030
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=c0,write_enb=0,read_enb=0,address=18                5050
+# FUNCTIONAL COVERAGE=100
+# SCB REF data_out=x,ADDRESS=18                5070
+# SCB REF data_out=x,MON data_out=x                5070
+# DATA MATCH SUCCESS.COUNT =100
+# SCB MON data_out=x,ADDRESS=x                5070
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=49,write_enb=0,read_enb=0,address=1                5090
+# FUNCTIONAL COVERAGE=100
+# SCB REF data_out=x,ADDRESS=1                5110
+# SCB REF data_out=x,MON data_out=x                5110
+# DATA MATCH SUCCESS.COUNT =101
+# SCB MON data_out=x,ADDRESS=x                5110
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=8,write_enb=0,read_enb=0,address=17                5130
+# FUNCTIONAL COVERAGE=100
+# SCB REF data_out=x,ADDRESS=17                5150
+# SCB REF data_out=x,MON data_out=x                5150
+# DATA MATCH SUCCESS.COUNT =102
+# SCB MON data_out=x,ADDRESS=x                5150
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=98,write_enb=0,read_enb=0,address=2                5170
+# FUNCTIONAL COVERAGE=100
+# SCB REF data_out=x,ADDRESS=2                5190
+# SCB REF data_out=x,MON data_out=x                5190
+# DATA MATCH SUCCESS.COUNT =103
+# SCB MON data_out=x,ADDRESS=x                5190
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=86,write_enb=0,read_enb=0,address=4                5210
+# FUNCTIONAL COVERAGE=100
+# SCB REF data_out=x,ADDRESS=4                5230
+# SCB REF data_out=x,MON data_out=x                5230
+# DATA MATCH SUCCESS.COUNT =104
+# SCB MON data_out=x,ADDRESS=x                5230
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=24,write_enb=0,read_enb=0,address=10                5250
+# FUNCTIONAL COVERAGE=100
+# SCB REF data_out=x,ADDRESS=10                5270
+# SCB REF data_out=x,MON data_out=x                5270
+# DATA MATCH SUCCESS.COUNT =105
+# SCB MON data_out=x,ADDRESS=x                5270
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=a9,write_enb=0,read_enb=0,address=18                5290
+# FUNCTIONAL COVERAGE=100
+# SCB REF data_out=x,ADDRESS=18                5310
+# SCB REF data_out=x,MON data_out=x                5310
+# DATA MATCH SUCCESS.COUNT =106
+# SCB MON data_out=x,ADDRESS=x                5310
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=8c,write_enb=0,read_enb=0,address=1e                5330
+# FUNCTIONAL COVERAGE=100
+# SCB REF data_out=x,ADDRESS=1e                5350
+# SCB REF data_out=x,MON data_out=x                5350
+# DATA MATCH SUCCESS.COUNT =107
+# SCB MON data_out=x,ADDRESS=x                5350
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=f0,write_enb=0,read_enb=0,address=15                5370
+# FUNCTIONAL COVERAGE=100
+# SCB REF data_out=x,ADDRESS=15                5390
+# SCB REF data_out=x,MON data_out=x                5390
+# DATA MATCH SUCCESS.COUNT =108
+# SCB MON data_out=x,ADDRESS=x                5390
+# DRIVER WRITE OPERATION DRIVING DATA TO INTERFACE data_in=d4,write_enb=0,read_enb=0,address=e                5410
+# FUNCTIONAL COVERAGE=100
+# SCB REF data_out=x,ADDRESS=e                5430
+# SCB REF data_out=x,MON data_out=x                5430
+# DATA MATCH SUCCESS.COUNT =109
+# ** Note: $finish    : top.sv(31)
+#    Time: 5430 ns  Iteration: 3  Instance: /top
+# End time: 09:53:04 on Jul 07,2026, Elapsed time: 0:00:22
 # Errors: 0, Warnings: 0
